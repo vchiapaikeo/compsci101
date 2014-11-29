@@ -48,7 +48,7 @@ int main ()
      }
      else 
      {
-        cout << "\nUnidentifiable DNA nucleotide present\n";
+        cout << "\nUnidentifiable DNA nucleotide found\n";
         // Break if statement
         return 0;
      }
@@ -64,7 +64,9 @@ int main ()
    // Dump all the empty spaces from CTableStr which may mess up our splits/finds
    string CTableStrScrubbed = removeWhitespaceFromStr(CTableStr);
 
-   cout << "\nPrinting CTable String Scrubbed: " << CTableStrScrubbed;
+   cout << "\n";
+   cout << "\n";
+   cout << "Printing CTable String Scrubbed: " << CTableStrScrubbed;
 
 
 
@@ -78,7 +80,9 @@ int main ()
       }
    }
 
-   cout << "\nPrinting Number of Amino Acid Codons: " << countAminoAcidCodons;
+   cout << "\n";
+   cout << "\n";
+   cout << "Printing Number of Amino Acid Codons: " << countAminoAcidCodons;
 
 
 
@@ -102,7 +106,9 @@ int main ()
       } 
    }
 
-   cout << "\nPrinting Amino Acids Array Indices: ";
+   cout << "\n";
+   cout << "\n";
+   cout << "Printing Amino Acids Array Indices: ";
 
    for (int i = 0; i < countAminoAcidCodons; i++) 
    {
@@ -136,7 +142,9 @@ int main ()
       } 
    }
 
-   cout << "\nPrinting codons array in indexed order: ";
+   cout << "\n";
+   cout << "\n";
+   cout << "Printing Codons Array in Indexed Order: ";
 
    for (int i = 0; i < countAminoAcidCodons; i++) 
    {
@@ -168,7 +176,9 @@ int main ()
       }
    }
 
-   cout << "\nNumber of Stop Codons: " << stopCodonsCount;
+   cout << "\n";
+   cout << "\n";
+   cout << "Printing Number of Stop Codons: " << stopCodonsCount;
 
    // Second, reset captureStopCodonFlag and populate stop codon array
    captureStopCodonFlag = 0;
@@ -198,7 +208,9 @@ int main ()
       }
    }
 
-   cout << "\nPrinting stop codons: ";
+   cout << "\n";
+   cout << "\n";
+   cout << "Printing Stop Codons: ";
    for (int i = 0; i < stopCodonsCount; i++) 
    {
       cout << stopCodonsArray[i] << ",";
@@ -219,7 +231,9 @@ int main ()
       }
    }
 
-   cout << "\nPrinting scrubbed amino acid array w/ newlines for STOP: ";
+   cout << "\n";
+   cout << "\n";
+   cout << "Printing Scrubbed Amino Acid Array w/ Newlines for STOP: ";
    for (int i = 0; i < countAminoAcidCodons; i ++) 
    {
       cout << aminoAcidsArray[i] << ",";
@@ -256,7 +270,9 @@ int main ()
    ofstream AminoAcidSequences;
    AminoAcidSequences.open("AminoAcidSequences.txt");
 
-   cout << "\nPrinting final amino acid sequences: \n";
+   cout << "\n";
+   cout << "\n";
+   cout << "Printing Final Amino Acid Sequences: \n";
    // Traverse through transcoded indices
    for (int i = 0; i < genomeRNAcount/3; i++) 
    {
@@ -266,7 +282,9 @@ int main ()
    }
    AminoAcidSequences.close();
 
-   cout << "\nFile output to AminoAcidSequences.txt completed\n";
+   cout << "\n";
+   cout << "\n";
+   cout << "File output to AminoAcidSequences.txt completed\n";
    //cin.ignore();
 
    return 0;
